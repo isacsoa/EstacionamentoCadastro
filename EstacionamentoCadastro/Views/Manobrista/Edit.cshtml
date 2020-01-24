@@ -1,0 +1,73 @@
+﻿@model ManobristaViewModel
+
+@{
+    ViewBag.Title = "Alterar informações sobre o manobrista";
+}
+@using (Html.BeginForm("Edit", "Manobrista", FormMethod.Post, new { @id = "formManobrista", enctype = "multipart /form-data" }))
+{
+    @Html.HiddenFor(x => x.Id)
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb pull-right">
+                <li><a href="/Manobrista">Manobristass</a></li>
+                <li class="active">Editar</li>
+            </ol>
+            <h3 class="page-header">Manobrista <small>Edição de informações sobre o manobrista.</small></h3>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-inverse Shadow" data-sortable-id="form-validation-1">
+                <div class="well">
+                    <div id="step1" role="tabpanel" class="bwizard-activated" aria-hidden="false">
+                        <fieldset>
+                            <legend class="pull-left width-full">
+                                Editar
+                            </legend>
+                            <div class="row" style="display:block">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Nome: </label>
+                                        @Html.TextBoxFor(x => x.NomeManobrista, new { @Class = "form-control", @maxlength = "100" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>CPF: </label>
+                                        @Html.TextBoxFor(x => x.CPF, new { @Class = "form-control", @maxlength = "11" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Data de Nascimento: </label>
+                                        @Html.TextBoxFor(x => x.DataNascimento, new { @Class = "form-control dateTimePicker"})
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <hr />
+                        <div class="row">
+                            <div class="pull-right">
+                                <div class="col-md-12">
+                                    <a href="@Url.Action("Index","Manobrista")" class="btn btn-default m-r-5 m-b-5">
+                                        <i class="fa fa-reply-all"></i>
+                                        Voltar
+                                    </a>
+                                    <button type="submit" class="btn btn-primary m-r-5 m-b-5">
+                                        <i class="fa fa-plus"></i>
+                                        Gravar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@section Scripts{
+    <script src="~/js/View/Carro/edit.js"></script>
+}

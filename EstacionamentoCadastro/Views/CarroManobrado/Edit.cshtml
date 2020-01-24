@@ -1,0 +1,66 @@
+﻿@model CarroManobradoViewModel
+
+@{
+    ViewBag.Title = "Alterar informações sobre o carro manobrado ";
+}
+@using (Html.BeginForm("Edit", "CarroManobrado", FormMethod.Post, new { @id = "formCarroManobrado", enctype = "multipart /form-data" }))
+{
+    @Html.HiddenFor(x => x.Id)
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb pull-right">
+                <li><a href="/CarroManobrado">Carros manobrados</a></li>
+                <li class="active">Editar</li>
+            </ol>
+            <h3 class="page-header">Carro <small>Edição de informações sobre o carro manobrado.</small></h3>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-inverse Shadow" data-sortable-id="form-validation-1">
+                <div class="well">
+                    <div id="step1" role="tabpanel" class="bwizard-activated" aria-hidden="false">
+                        <fieldset>
+                            <legend class="pull-left width-full">
+                                Editar
+                            </legend>
+                            <div class="row" style="display:block">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Carro: </label>
+                                        @Html.DropDownListFor(x => x.IdCarro, (List<SelectListItem>)ViewBag.Carros, "Selecione", new { @Class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Tipo: </label>
+                                        @Html.DropDownListFor(x => x.IdManobrista, (List<SelectListItem>)ViewBag.Manobristas, "Selecione", new { @Class = "form-control" })
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </fieldset>
+                        <hr />
+                        <div class="row">
+                            <div class="pull-right">
+                                <div class="col-md-12">
+                                    <a href="@Url.Action("Index","CarroManobrado")" class="btn btn-default m-r-5 m-b-5">
+                                        <i class="fa fa-reply-all"></i>
+                                        Voltar
+                                    </a>
+                                    <button type="submit" class="btn btn-primary m-r-5 m-b-5">
+                                        <i class="fa fa-plus"></i>
+                                        Gravar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@section Scripts{
+    <script src="~/js/View/Carro/edit.js"></script>
+}

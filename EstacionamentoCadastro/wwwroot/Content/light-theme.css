@@ -1,0 +1,160 @@
+﻿body {
+    background-color: white;
+}
+
+.navbar.navbar-inverse {
+    background: #EEEEEE;
+}
+
+.sidebar {
+    background: rgba(238,238,238,1);
+}
+
+    .sidebar .nav > li.expand > a, .sidebar .nav > li > a:hover, .sidebar .nav > li > a:focus {
+        background: rgba(238,238,238,1);
+    }
+
+    .sidebar .sub-menu {
+        background: rgb(232, 232, 232);
+    }
+
+.sidebar-minify-btn {
+    background: rgb(210, 210, 210);
+}
+
+    .sidebar-minify-btn i {
+        color: #333;
+    }
+
+.page-sidebar-minified .sidebar .nav li.has-sub > .sub-menu {
+    background: #eee;
+    border: rgb(202,202,202) solid 1px;
+    border-left: none;
+}
+
+.page-sidebar-minified .sidebar .nav > li.has-sub:hover > a, .page-sidebar-minified .sidebar .nav > li.has-sub:focus > a {
+    background: #eee;
+}
+
+.sidebar.sidebar-grid .nav > li > a:first-child {
+    border-top: none;
+}
+
+.sidebar .sub-menu:before {
+    background: rgb(160,160,160);
+}
+
+.sidebar .sub-menu > li > a:hover, .sidebar .sub-menu > li > a:focus, .sidebar .sub-menu > li.active > a, .sidebar .sub-menu > li.active > a:hover, .sidebar .sub-menu > li.active > a:focus {
+    color: #333;
+}
+
+.widget.containter-grafico-alertas, .widget.resumo-alertas {
+    color: #333;
+}
+
+
+.alerta-table a, .alerta-table a:hover {
+    color: #333;
+}
+
+.containter-grafico-alertas {
+    background: #eee !important;
+}
+
+.resumo-alertas {
+    background: #eee !important;
+}
+
+    .resumo-alertas .stats-desc {
+        color: #333;
+    }
+
+
+    .resumo-alertas.widget-stats .stats-icon {
+        color: #2d353c;
+    }
+
+.navbar.navbar-inverse .navbar-brand {
+    color: #333 !important;
+}
+
+.sidebar.sidebar-grid .nav > li > a {
+    border-bottom: 1px solid rgb(202,202,202);
+    border-top: 1px solid rgb(202,202,202);
+}
+
+
+.swith-theme-preview {
+    border: solid 1px rgb(202,202,202);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #2d353c;
+    margin-right: 6px;
+    vertical-align: text-top;
+}
+
+.sidebar-bg {
+    background: #eee !important;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #337ab7 !important;
+    border-color: #337ab7 !important;
+}
+
+.panel-inverse > .panel-heading {
+    background: rgb(210, 210, 210);
+}
+
+.navbar.navbar-inverse .navbar-brand, .sidebar .nav > li.active > a, .sidebar .nav > li.active > a:focus, .sidebar .nav > li.active > a:hover, .page-sidebar-minified .sidebar .nav > li.has-sub.active:focus > a, .page-sidebar-minified .sidebar .nav > li.has-sub.active:hover > a, .page-sidebar-minified .sidebar .nav > li.has-sub.active > a, .label.label-theme, .btn.btn-scroll-to-top {
+    background: rgb(210, 210, 210);
+    color: #333;
+}
+
+.btn.btn-success:hover, .btn.btn-success:focus, .btn.btn-success:active, .btn.btn-success.active, .open .dropdown-toggle.btn-success {
+    color: #FFF;
+}
+
+.logo-fix-sub, .sidebar, .sidebar .nav > li > a, .sidebar .sub-menu > li > a, .navbar.navbar-inverse .navbar-brand, .navbar.navbar-inverse .navbar-nav > li > a, .sidebar .nav > li li.has-sub.active > a {
+    color: #333 !important;
+}
+
+#lista-AplicacaoPatch .bg-purple-lighter {
+    background: rgba(238,238,238,1) !important;
+    color: #333 !important;
+}
+
+#lista-AplicacaoPatch .row-aplicacao {
+    border-top: 1px solid #CCD0D4 !important;
+}
+
+#lista-AplicacaoPatch .border-purple {
+    border: 1px solid #CCD0D4 !important;
+}
+
+#lista-AplicacaoPatch .bg-purple-darker {
+    background: #D2D2D2 !important;
+    color: #333 !important;
+}
+
+.bg-black-darker {
+    background: #D2D2D2 !important;
+    color: #333 !important;
+}
+
+    .bg-black-darker .stats-title, .bg-black-darker .widget-stats .stats-desc, .bg-black-darker .stats-icon {
+        color: #333 !important;
+    }
+
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-header {
+        background: #EEEEEE;
+        border-bottom: 1px solid #EDEDED;
+    }
+
+    .navbar-toggle .icon-bar {
+        background-color: #333 !important;
+    }
+}
